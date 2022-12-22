@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -27,7 +27,7 @@
                     </connections>
                 </button>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ymf-rC-qWc">
-                    <rect key="frame" x="13" y="0.0" width="311" height="44"/>
+                    <rect key="frame" x="13" y="0.0" width="362" height="44"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="scrollIndicatorInsets" minX="0.0" minY="7" maxX="0.0" maxY="7"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="FLN-HH-IlY">
@@ -43,6 +43,9 @@
                 </collectionView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tf8-um-STV">
                     <rect key="frame" x="324" y="0.0" width="40" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="CIF-At-EEW"/>
+                    </constraints>
                     <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <state key="normal" image="ic_emojiDelete.png"/>
                     <connections>
@@ -52,7 +55,6 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="Tf8-um-STV" firstAttribute="leading" secondItem="Ymf-rC-qWc" secondAttribute="trailing" id="Ake-Tw-r7d"/>
                 <constraint firstItem="Ymf-rC-qWc" firstAttribute="top" secondItem="f88-xx-Pa0" secondAttribute="top" id="BMW-Iv-zjx"/>
                 <constraint firstItem="knY-pK-n7O" firstAttribute="top" secondItem="f88-xx-Pa0" secondAttribute="top" id="EM8-cJ-hcX"/>
                 <constraint firstAttribute="trailing" secondItem="Tf8-um-STV" secondAttribute="trailing" constant="11" id="FhW-qU-1Dg"/>
@@ -73,7 +75,7 @@
                 <outlet property="collectionViewToSuperViewLeadingConstraint" destination="JuT-Ya-x8H" id="6Tp-mK-lpt"/>
                 <outlet property="deleteButton" destination="Tf8-um-STV" id="9VY-aM-FWJ"/>
             </connections>
-            <point key="canvasLocation" x="33.5" y="54"/>
+            <point key="canvasLocation" x="32.799999999999997" y="53.973013493253376"/>
         </view>
     </objects>
     <resources>
